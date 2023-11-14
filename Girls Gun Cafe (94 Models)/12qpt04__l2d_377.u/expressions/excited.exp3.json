@@ -1,0 +1,15 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": -0.6,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYEBALL_TYPE",
+			"Value": 0.543,
+			"Blend": "Add"
+		}
+	]
+}

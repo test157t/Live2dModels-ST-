@@ -1,0 +1,115 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_X",
+			"Value": -22.646,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_Z",
+			"Value": 30,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_Y",
+			"Value": -0.37,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_Y",
+			"Value": 0.496,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_ANGLE",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_ANGLE",
+			"Value": -0.598,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HEIXIAN",
+			"Value": 0.188,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_X",
+			"Value": -5.591,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HAN",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_CheekNormal",
+			"Value": 0.321,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTHTYPE1",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTHTYPE2",
+			"Value": 0.157,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_X",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_Y",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_R_Deform",
+			"Value": 0.122,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_Deform",
+			"Value": -0.059,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HEIXIAN0",
+			"Value": 0.543,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYESMALL",
+			"Value": 0.409,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYEBALL_CHANGE",
+			"Value": -1,
+			"Blend": "Add"
+		}
+	]
+}

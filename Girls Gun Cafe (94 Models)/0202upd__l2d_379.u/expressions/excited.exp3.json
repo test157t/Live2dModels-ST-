@@ -1,0 +1,50 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_TYPE",
+			"Value": 15,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_BIG",
+			"Value": 10,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYEBALL_TYPE",
+			"Value": 9.658,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYER_L_SMILE",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYER_R_SMILE",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYER_L_OPEN",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYETYPE2",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_FX_HUA",
+			"Value": 7.692,
+			"Blend": "Add"
+		}
+	]
+}

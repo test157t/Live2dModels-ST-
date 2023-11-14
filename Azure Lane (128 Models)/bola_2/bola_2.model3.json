@@ -1,0 +1,84 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "bola_2.moc3",
+		"Textures": [
+			"textures/texture_00 - 副本.png"
+		],
+		"Physics": "bola_2.physics3.json",
+		"Motions": {
+			"Idle": [
+				{
+					"File": "motions/idle.motion3.json"
+				}
+			],
+			"Start": [
+				{
+					"File": "motions/login.motion3.json",
+					"Sound": "voice/Pola_LogJP.ogg"
+				},
+				{
+					"File": "motions/home.motion3.json",
+					"Sound": "voice/Pola_SelfIntroJP.ogg"
+				}
+			],
+			"TapTouchSpecial": [
+				{
+					"File": "motions/touch_special.motion3.json",
+					"Sound": "voice/Pola_Sec2JP.ogg"
+				}
+			],
+			"TapTouchHead": [
+				{
+					"File": "motions/touch_head.motion3.json",
+					"Sound": "voice/Pola_DetailsJP.ogg"
+				}
+			],
+			"TapTouchBody": [
+				{
+					"File": "motions/touch_body.motion3.json",
+					"Sound": "voice/Pola_Sec1JP.ogg"
+				}
+			],
+			"TapFace": [
+				{
+					"File": "motions/main_1.motion3.json",
+					"Sound": "voice/Pola_SecIdle1JP.ogg"
+				},
+				{
+					"File": "motions/main_2.motion3.json",
+					"Sound": "voice/Pola_SecIdle2JP.ogg"
+				},
+				{
+					"File": "motions/main_3.motion3.json",
+					"Sound": "voice/Pola_SecIdle3JP.ogg"
+				}
+			],
+			"Tappanci": [
+				{
+					"File": "motions/wedding.motion3.json",
+					"Sound": "voice/Pola_PledgeJP.ogg"
+				},
+				{
+					"File": "motions/mail.motion3.json",
+					"Sound": "voice/Pola_MailJP.ogg"
+				}
+			],
+			"Tapdamuzi": [
+				{
+					"File": "motions/mission.motion3.json",
+					"Sound": "voice/Pola_TaskJP.ogg"
+				},
+				{
+					"File": "motions/mission_complete.motion3.json",
+					"Sound": "voice/Pola_TaskCJP.ogg"
+				},
+				{
+					"File": "motions/complete.motion3.json",
+					"Sound": "voice/Pola_CommissionJP.ogg"
+				}
+			]
+		}
+	},
+	"HitAreas": []
+}

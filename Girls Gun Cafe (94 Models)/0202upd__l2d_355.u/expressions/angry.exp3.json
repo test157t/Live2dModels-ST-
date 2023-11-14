@@ -1,0 +1,80 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_ANGLE",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_ANGLE",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_Y",
+			"Value": -0.607,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_Y",
+			"Value": -0.299,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_LIANHEI",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_FORM",
+			"Value": -0.8,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_FORM",
+			"Value": -1.7,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_OPEN",
+			"Value": -0.321,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_R_OPEN",
+			"Value": -0.368,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_SUOFANG",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_TESHU_ZUI",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_TONGKONG_SUOFANG",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_R_SMILE",
+			"Value": -0.5,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_SMILE",
+			"Value": -0.5,
+			"Blend": "Add"
+		}
+	]
+}

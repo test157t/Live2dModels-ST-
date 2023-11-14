@@ -1,0 +1,28 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "yco013_01.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Motions": {
+			"Idle": [
+				{
+					"File": "motions/idle.motion3.json",
+					"FadeInTime": 0,
+					"FadeOutTime": 0
+				}
+			],
+			"": [
+				{
+					"File": "motions/touch2.motion3.json"
+				},
+				{
+					"File": "motions/touch1.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [],
+	"HitAreas": []
+}

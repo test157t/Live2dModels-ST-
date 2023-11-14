@@ -1,0 +1,50 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_BIG",
+			"Value": 10,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_TEAR",
+			"Value": 3,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_FACE_HAN",
+			"Value": 6.752,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYER_OPEN",
+			"Value": -0.457,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYER_L_OPEN",
+			"Value": -0.449,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HONGYUN_TYPE",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HONGYUN_TYPE2",
+			"Value": -3.333,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_DARK",
+			"Value": 1,
+			"Blend": "Add"
+		}
+	]
+}

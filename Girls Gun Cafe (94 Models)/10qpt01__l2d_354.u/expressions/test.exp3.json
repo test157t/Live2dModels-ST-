@@ -1,0 +1,45 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_HEI",
+			"Value": 0.339,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_WATER",
+			"Value": 0.748,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HAN",
+			"Value": -0.339,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_X",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 1.6,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_X",
+			"Value": 13,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_Y",
+			"Value": -9.528,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_Z",
+			"Value": 5.118,
+			"Blend": "Add"
+		}
+	]
+}

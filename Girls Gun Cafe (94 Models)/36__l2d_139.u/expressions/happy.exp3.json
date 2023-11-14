@@ -1,0 +1,30 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": -0.6,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYEBALL_TYPE",
+			"Value": -0.103,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_CheekNormal",
+			"Value": 0.353,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_CHEEK",
+			"Value": 0.197,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_CHEEK1",
+			"Value": 0.329,
+			"Blend": "Add"
+		}
+	]
+}

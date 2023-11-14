@@ -1,0 +1,45 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_EYE_CHANGE1",
+			"Value": 1.173,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 1.4,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_TERE",
+			"Value": 0.4,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_Y",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HAN",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_WATER",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HEIYANQUAN",
+			"Value": 0.764,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HEIXIAN",
+			"Value": 0.732,
+			"Blend": "Add"
+		}
+	]
+}

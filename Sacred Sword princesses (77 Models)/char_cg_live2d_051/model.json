@@ -1,0 +1,39 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "model",
+	"model": "model.moc",
+	"motions": {
+      "": [
+        {
+          "file": "DefaultMtn.mtn"
+		},
+        {
+          "file": "LoopMtn_000.mtn"
+        },
+        {
+          "file": "LoopMtn_001.mtn"
+        },
+        {
+          "file": "LoopMtn_002.mtn"
+        },
+        {
+          "file": "LoopMtn_004.mtn"
+        },
+        {
+          "file": "Mtn_000.mtn"
+        },
+        {
+          "file": "Mtn_001.mtn"
+        },
+        {
+          "file": "Mtn_002.mtn"
+        },
+        {
+          "file": "Mtn_004.mtn"
+        }
+      ]
+	},
+	  "textures": [
+	"model.1024/texture_00.png"
+	]    
+}

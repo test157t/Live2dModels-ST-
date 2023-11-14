@@ -1,0 +1,135 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_EYE_R_OPEN",
+			"Value": -0.568,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_OPEN",
+			"Value": -0.573,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_Y",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_X",
+			"Value": -0.906,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_FORM",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_WATER",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_LIANHEI",
+			"Value": 0.496,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HAN",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_CHEEK",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_SHOULDERR",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_X",
+			"Value": -15.641,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ZHONGZHI_R",
+			"Value": -2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_WUMINGZHI_R",
+			"Value": -2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_XIAOZHI_R",
+			"Value": -2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ARML_BIG",
+			"Value": -28.564,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ARML_SMALL",
+			"Value": -171,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_Z",
+			"Value": -1.453,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BODY_ANGLE_Y",
+			"Value": -10,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_WENXIANGYAN",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_SHIZHI_R",
+			"Value": -2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ARML_Y2",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ARML_Y",
+			"Value": -0.35,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_SHOULDERL",
+			"Value": -1,
+			"Blend": "Add"
+		}
+	]
+}

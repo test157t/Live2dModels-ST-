@@ -1,0 +1,20 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_XINGXING",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_SHANSHUO",
+			"Value": 1,
+			"Blend": "Add"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": -0.5,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_OPEN_Y",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_BIG",
+			"Value": 10,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYETYPE2",
+			"Value": 0.872,
+			"Blend": "Add"
+		}
+	]
+}
