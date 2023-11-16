@@ -1,0 +1,25 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_R_SMILE",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_OPEN",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_SMILE",
+			"Value": 1,
+			"Blend": "Add"
+		}
+	]
+}

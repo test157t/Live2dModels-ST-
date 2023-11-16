@@ -1,0 +1,75 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_BROW_L_ANGLE",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_ANGLE",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_X",
+			"Value": -25.039,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_Z",
+			"Value": -3.543,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_Y",
+			"Value": 0.098,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_Y",
+			"Value": 0.128,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_Dark",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_Line",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MouthType1",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BiPao",
+			"Value": 0.827,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_Han_xh",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_Zhamao",
+			"Value": 1,
+			"Blend": "Add"
+		}
+	]
+}

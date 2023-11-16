@@ -1,0 +1,10 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": -2,
+			"Blend": "Add"
+		}
+	]
+}

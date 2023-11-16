@@ -1,0 +1,70 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_L_SMILE",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_R_SMILE",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_SPECIAL",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_OPEN",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_TERE",
+			"Value": 0.046,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_RED_01",
+			"Value": 0.26,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_CHANGE1",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_CHANGE2",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_DEFORM_SPECIAL",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_SPECIAL_01",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_SPECIAL_02",
+			"Value": -0.841,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_SIZE",
+			"Value": 1,
+			"Blend": "Add"
+		}
+	]
+}

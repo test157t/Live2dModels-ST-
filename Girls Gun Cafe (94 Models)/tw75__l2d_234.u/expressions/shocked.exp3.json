@@ -1,0 +1,35 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_Y",
+			"Value": 0.841,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_Y",
+			"Value": 0.762,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_OPEN",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_KIRA",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_TI2",
+			"Value": -1,
+			"Blend": "Add"
+		}
+	]
+}

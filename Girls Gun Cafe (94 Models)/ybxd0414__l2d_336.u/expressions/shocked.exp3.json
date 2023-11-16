@@ -1,0 +1,25 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 1.4,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HAN",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HEIXIAN",
+			"Value": 0.732,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYESMALL",
+			"Value": 0.913,
+			"Blend": "Add"
+		}
+	]
+}

@@ -1,0 +1,105 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_ANGLE",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_ANGLE",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_X",
+			"Value": -22.646,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_Z",
+			"Value": 30,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_Y",
+			"Value": 0.098,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_Y",
+			"Value": 0.128,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HEIXIAN",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HAN",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HEIYANQUAN_LIANHEI",
+			"Value": -0.983,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_DAOJU1",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_FINGER0R",
+			"Value": -0.7,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_FINGER1",
+			"Value": -0.414,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_FINGERS_R_MOVE",
+			"Value": -0.5,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ARM_R_SMALL_LEVEL",
+			"Value": 480,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HAND_R_X",
+			"Value": -5,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_HANDR_Z",
+			"Value": 10.769,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_RIGHT_ARM",
+			"Value": 0.484,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ZHIHUIBANG_DONGHUA",
+			"Value": 0,
+			"Blend": "Add"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": -0.254,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_TERE",
+			"Value": 0.4,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_Y",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_WATER",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_OPEN",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_FORM",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_WHITE",
+			"Value": -1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_Y",
+			"Value": 1.01,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_Y",
+			"Value": 0.708,
+			"Blend": "Add"
+		}
+	]
+}

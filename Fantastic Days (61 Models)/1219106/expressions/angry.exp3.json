@@ -1,0 +1,45 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_EYE_L_OPEN",
+			"Value": 0.5,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_R_OPEN",
+			"Value": 0.5,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_FORM_01",
+			"Value": -1.717,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_POS_Y",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_SHOLDER_POSITION",
+			"Value": 10,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_FACE_SHADOW",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_R_ANGLE",
+			"Value": -0.48,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_BROW_L_ANGLE",
+			"Value": -0.591,
+			"Blend": "Add"
+		}
+	]
+}

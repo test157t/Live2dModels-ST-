@@ -1,0 +1,20 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MouthBig",
+			"Value": 1,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_CHEEK",
+			"Value": 0.254,
+			"Blend": "Add"
+		}
+	]
+}

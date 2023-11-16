@@ -1,0 +1,30 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "PARAM_EYE_L_OPEN",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_ANGLE_Y",
+			"Value": -9.213,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_MOUTH_FORM",
+			"Value": -2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_Tear",
+			"Value": 1.127,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EyeballSmall",
+			"Value": 1,
+			"Blend": "Add"
+		}
+	]
+}
