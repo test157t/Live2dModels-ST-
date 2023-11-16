@@ -123,122 +123,69 @@
 		"Motions": {
 			"": [
 				{
-					"File": "motions/Mgirl15_paishou.motion3.json"
+					"File": "motions/applause.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_yansu.motion3.json"
+					"File": "motions/confusion.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_motoubiyan.motion3.json"
+					"File": "motions/disapproval.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_jingxia.motion3.json"
+					"File": "motions/dissapointed.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_jugong.motion3.json"
+					"File": "motions/doubt.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_juanL.motion3.json"
+					"File": "motions/embarrassed.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_tuoyeganga.motion3.json"
+					"File": "motions/headshake.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_tuoyeganga.motion3.json"
+					"File": "motions/impatient.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_shengqi.motion3.json"
+					"File": "motions/love.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_bukaixing.motion3.json"
+					"File": "motions/panic.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_buganzhixin.motion3.json"
+					"File": "motions/pondering.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_haixiu2.motion3.json"
+					"File": "motions/shy1.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_motoubiyan.motion3.json"
+					"File": "motions/shy2.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_juanL.motion3.json"
+					"File": "motions/smile.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_paishou.motion3.json"
+					"File": "motions/surprise.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_baishou.motion3.json"
+					"File": "motions/thinking.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_jingxia.motion3.json"
+					"File": "motions/waving.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_zhenzuo.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_weixiao.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_buganzhixin.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_duishouzhi.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_huahua.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_huahua.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_baishou.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_haixiu2.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_weiqu.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_duishouzhi.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_haixiu1.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_juanR.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_juanR.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_zhenzuo.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_haixiu1.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_jugong.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_weiqu.motion3.json"
+					"File": "motions/worried.motion3.json"
 				}
 			],
 			"Idle": [
 				{
-					"File": "motions/Mgirl15_stand_c.motion3.json"
+					"File": "motions/stand.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_stand.motion3.json"
+					"File": "motions/stand_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl15_stand.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl15_stand_a.motion3.json",
-					"FadeInTime": 0,
-					"FadeOutTime": 0
+					"File": "motions/stand_c.motion3.json"
 				}
 			]
 		}
