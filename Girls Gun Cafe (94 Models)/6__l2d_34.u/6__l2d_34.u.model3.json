@@ -43,165 +43,135 @@
 		"Motions": {
 			"": [
 				{
-					"File": "motions/Mgirl12_yibenzhengjing.motion3.json"
+					"File": "motions/act_cute_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_wink.motion3.json"
+					"File": "motions/angry_b.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_tuoyeganga.motion3.json"
+					"File": "motions/angry_c.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_tianxiao_a.motion3.json"
+					"File": "motions/awkward surprise.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_tushetou.motion3.json"
+					"File": "motions/blink.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_xiunu_a.motion3.json"
+					"File": "motions/clasp hands.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_baiyan.motion3.json"
+					"File": "motions/cute_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_motouweixiao.motion3.json"
+					"File": "motions/dissapointed a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_eyimaimeng_a.motion3.json"
+					"File": "motions/dissapointed.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_haixiu.motion3.json"
+					"File": "motions/eat icecream 2.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_tuoyeyihuo.motion3.json"
+					"File": "motions/eat icecream.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_lawaquan.motion3.json"
+					"File": "motions/elegant_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_keai_a.motion3.json"
+					"File": "motions/embarrased b.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_tianxiao_a.motion3.json"
+					"File": "motions/embarrased.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_zhamao_c.motion3.json"
+					"File": "motions/embrace.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_chibingqilin_a.motion3.json"
+					"File": "motions/excited.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_tuoyeganga_c.motion3.json"
+					"File": "motions/face-changing_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_yibenzhengjing.motion3.json"
+					"File": "motions/fear.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_xianqi_c.motion3.json"
+					"File": "motions/funny cat.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_maoyan.motion3.json"
+					"File": "motions/giggle.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_bianlian_a.motion3.json"
+					"File": "motions/giggle_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_dazhaohu_a.motion3.json"
+					"File": "motions/greet a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_yikou.motion3.json"
+					"File": "motions/greet b.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_jingxi_a.motion3.json"
+					"File": "motions/jealous.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_baozhu.motion3.json"
+					"File": "motions/laugh.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_sajiao_a.motion3.json"
+					"File": "motions/love a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_chijing.motion3.json"
+					"File": "motions/pet cat.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_quanquanyan.motion3.json"
+					"File": "motions/pout.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_tuoyehaixiu_a.motion3.json"
+					"File": "motions/scratch_head_c.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_yihuo.motion3.json"
+					"File": "motions/shy.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_baonu_c.motion3.json"
+					"File": "motions/solemn.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_motouxiao_a.motion3.json"
+					"File": "motions/surprise.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_shengqi_c.motion3.json"
+					"File": "motions/thinking_c.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_chibingqilin.motion3.json"
+					"File": "motions/touch_nose_angry_c.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_maoyan.motion3.json"
+					"File": "motions/touch_nose_shy.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_lawaquan_a.motion3.json"
+					"File": "motions/touch_nose_smile.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_xiunu_a.motion3.json"
+					"File": "motions/touch_nose_smile_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_motouwushi_c.motion3.json"
+					"File": "motions/wink.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_sajiao_a.motion3.json"
+					"File": "motions/yawn and cat nuzzle.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_motouhaixiu.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_lianhonghong.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_dahaqian_c.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_jingxi_a.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_jiashengqi.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_nu.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_dazhaohu.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_jiashengqi.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_erduopa.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_keai_a.motion3.json"
+					"File": "motions/yawn_c.motion3.json"
 				}
 			],
 			"Idle": [
 				{
-					"File": "motions/Mgirl12_stand.motion3.json"
+					"File": "motions/idle.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_stand.motion3.json"
+					"File": "motions/idle_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl12_stand_c.motion3.json"
-				},
-				{
-					"File": "motions/Mgirl12_stand_a.motion3.json"
+					"File": "motions/idle_c.motion3.json"
 				}
 			]
 		}
