@@ -123,69 +123,139 @@
 		"Motions": {
 			"": [
 				{
-					"File": "motions/[FIXED]applause.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Angry.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]confusion.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]applause.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]disapproval.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Backhand.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]dissapointed.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Blink.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]doubt.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Bow.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]embarrassed.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Charging.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]headshake.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Charm.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]impatient.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Clap.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]love.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]confusion.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]panic.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Curtsy.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]pondering.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Dance.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]shy1.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Descend.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]shy2.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]disapproval.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]smile.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]dissapointed.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]surprise.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Don'tWorry.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]thinking.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]doubt.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]waving.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]embarrassed.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]worried.motion3.json"
-				}
-			],
-			"Idle": [
-				{
-					"File": "motions/[FIXED]stand.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Flower.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]stand_a.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Headbutt.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]stand_c.motion3.json"
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]headshake.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Heart.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]impatient.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]love.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]OpponentFinger.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]panic.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]pondering.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Pose.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Practice.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Shake.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]ShoulderBrush.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]ShoulderShrugShy.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]shy1.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]shy2.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]smile.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]Smile1.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]SpinningHeart.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]stand.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]stand1.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]stand_a.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]stand_c.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]surprise.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]thinking.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]waving.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]WipeSweat.motion3.json"
+				},
+				{
+					"File": "../../../SillyTavern/public/assets/live2d/Girls Gun Cafe (94 Models)/newg02__l2d_297.u/motions/[FIXED]worried.motion3.json"
 				}
 			]
 		}
