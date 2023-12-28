@@ -27,63 +27,63 @@
 		"Motions": {
 			"": [
 				{
-					"File": "motions/00_Pride_01.motion3.json"
+					"File": "motions/[FIXED]00_Pride_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Surprise_01.motion3.json"
+					"File": "motions/[FIXED]00_Surprise_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Happy_01.motion3.json"
+					"File": "motions/[FIXED]00_Happy_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Upset_01.motion3.json"
+					"File": "motions/[FIXED]00_Upset_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Cry_01.motion3.json"
+					"File": "motions/[FIXED]00_Cry_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Happy_02.motion3.json"
+					"File": "motions/[FIXED]00_Happy_02.motion3.json"
 				},
 				{
-					"File": "motions/00_Anger_02.motion3.json"
+					"File": "motions/[FIXED]00_Anger_02.motion3.json"
 				},
 				{
-					"File": "motions/00_Anger_03.motion3.json"
+					"File": "motions/[FIXED]00_Anger_03.motion3.json"
 				},
 				{
-					"File": "motions/00_Serious_01.motion3.json"
+					"File": "motions/[FIXED]00_Serious_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Anger_01.motion3.json"
+					"File": "motions/[FIXED]00_Anger_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Appeal_02.motion3.json"
+					"File": "motions/[FIXED]00_Appeal_02.motion3.json"
 				},
 				{
-					"File": "motions/00_Surprise_02.motion3.json"
+					"File": "motions/[FIXED]00_Surprise_02.motion3.json"
 				},
 				{
-					"File": "motions/00_Puzzle_01.motion3.json"
+					"File": "motions/[FIXED]00_Puzzle_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Shame_01.motion3.json"
+					"File": "motions/[FIXED]00_Shame_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Cry_02.motion3.json"
+					"File": "motions/[FIXED]00_Cry_02.motion3.json"
 				},
 				{
-					"File": "motions/00_Appeal_01.motion3.json"
+					"File": "motions/[FIXED]00_Appeal_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Doubt_01.motion3.json"
+					"File": "motions/[FIXED]00_Doubt_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Sad_01.motion3.json"
+					"File": "motions/[FIXED]00_Sad_01.motion3.json"
 				}
 			],
 			"Idle": [
 				{
-					"File": "motions/00_Wait_01.motion3.json"
+					"File": "motions/[FIXED]00_Wait_01.motion3.json"
 				}
 			]
 		}
