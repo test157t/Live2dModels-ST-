@@ -8,16 +8,56 @@
 		"Physics": "newg04__l2d_299.u.physics3.json",
 		"Expressions": [
 			{
+				"Name": "admiration.exp3.json",
+				"File": "expressions/admiration.exp3.json"
+			},
+			{
+				"Name": "amusement.exp3.json",
+				"File": "expressions/amusement.exp3.json"
+			},
+			{
+				"Name": "anger.exp3.json",
+				"File": "expressions/anger.exp3.json"
+			},
+			{
 				"Name": "angry.exp3.json",
 				"File": "expressions/angry.exp3.json"
+			},
+			{
+				"Name": "annoyance.exp3.json",
+				"File": "expressions/annoyance.exp3.json"
 			},
 			{
 				"Name": "approval.exp3.json",
 				"File": "expressions/approval.exp3.json"
 			},
 			{
+				"Name": "caring.exp3.json",
+				"File": "expressions/caring.exp3.json"
+			},
+			{
+				"Name": "confusion.exp3.json",
+				"File": "expressions/confusion.exp3.json"
+			},
+			{
+				"Name": "curiosity.exp3.json",
+				"File": "expressions/curiosity.exp3.json"
+			},
+			{
 				"Name": "desire.exp3.json",
 				"File": "expressions/desire.exp3.json"
+			},
+			{
+				"Name": "disappointment.exp3.json",
+				"File": "expressions/disappointment.exp3.json"
+			},
+			{
+				"Name": "disapproval.exp3.json",
+				"File": "expressions/disapproval.exp3.json"
+			},
+			{
+				"Name": "disgust.exp3.json",
+				"File": "expressions/disgust.exp3.json"
 			},
 			{
 				"Name": "embarrassed.exp3.json",
@@ -28,20 +68,76 @@
 				"File": "expressions/excited.exp3.json"
 			},
 			{
+				"Name": "excitement.exp3.json",
+				"File": "expressions/excitement.exp3.json"
+			},
+			{
+				"Name": "fear.exp3.json",
+				"File": "expressions/fear.exp3.json"
+			},
+			{
+				"Name": "gratitude.exp3.json",
+				"File": "expressions/gratitude.exp3.json"
+			},
+			{
+				"Name": "grief.exp3.json",
+				"File": "expressions/grief.exp3.json"
+			},
+			{
 				"Name": "happy.exp3.json",
 				"File": "expressions/happy.exp3.json"
+			},
+			{
+				"Name": "joy.exp3.json",
+				"File": "expressions/joy.exp3.json"
+			},
+			{
+				"Name": "love.exp3.json",
+				"File": "expressions/love.exp3.json"
+			},
+			{
+				"Name": "nervousness.exp3.json",
+				"File": "expressions/nervousness.exp3.json"
 			},
 			{
 				"Name": "neutral.exp3.json",
 				"File": "expressions/neutral.exp3.json"
 			},
 			{
+				"Name": "optimism.exp3.json",
+				"File": "expressions/optimism.exp3.json"
+			},
+			{
+				"Name": "pride.exp3.json",
+				"File": "expressions/pride.exp3.json"
+			},
+			{
+				"Name": "realization.exp3.json",
+				"File": "expressions/realization.exp3.json"
+			},
+			{
+				"Name": "relief.exp3.json",
+				"File": "expressions/relief.exp3.json"
+			},
+			{
+				"Name": "remorse.exp3.json",
+				"File": "expressions/remorse.exp3.json"
+			},
+			{
 				"Name": "sad.exp3.json",
 				"File": "expressions/sad.exp3.json"
 			},
 			{
+				"Name": "sadness.exp3.json",
+				"File": "expressions/sadness.exp3.json"
+			},
+			{
 				"Name": "shocked.exp3.json",
 				"File": "expressions/shocked.exp3.json"
+			},
+			{
+				"Name": "surprise.exp3.json",
+				"File": "expressions/surprise.exp3.json"
 			}
 		],
 		"Motions": {

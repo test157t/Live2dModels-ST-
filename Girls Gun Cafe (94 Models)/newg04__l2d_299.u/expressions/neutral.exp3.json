@@ -2,18 +2,28 @@
 	"Type": "Live2D Expression",
 	"Parameters": [
 		{
-			"Id": "PARAM_MOUTH_FORM",
-			"Value": -0.968,
+			"Id": "PARAM_ANGLE_X",
+			"Value": -19,
 			"Blend": "Add"
 		},
 		{
-			"Id": "PARAM_BROW_L_ANGLE",
-			"Value": 1,
+			"Id": "PARAM_ANGLE_Y",
+			"Value": 11,
 			"Blend": "Add"
 		},
 		{
-			"Id": "PARAM_MOUTH_OPEN",
-			"Value": -1,
+			"Id": "PARAM_ANGLE_Z",
+			"Value": -7,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_BALL_QIEHUAN1",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "PARAM_EYE_SPECIAL",
+			"Value": 0,
 			"Blend": "Add"
 		}
 	]
