@@ -27,24 +27,24 @@
 		"Motions": {
 			"": [
 				{
-					"File": "motions/00_Surprise_01.motion3.json"
+					"File": "motions/[FIXED]00_Surprise_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Appeal_01.motion3.json"
+					"File": "motions/[FIXED]00_Appeal_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Anger_01.motion3.json"
+					"File": "motions/[FIXED]00_Anger_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Cry_01.motion3.json"
+					"File": "motions/[FIXED]00_Cry_01.motion3.json"
 				},
 				{
-					"File": "motions/00_Appeal_02.motion3.json"
+					"File": "motions/[FIXED]00_Appeal_02.motion3.json"
 				}
 			],
 			"Idle": [
 				{
-					"File": "motions/00_Wait_01.motion3.json"
+					"File": "motions/[FIXED]00_Wait_01.motion3.json"
 				}
 			]
 		}
