@@ -1,0 +1,116 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "47__l2d_202.u.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Physics": "47__l2d_202.u.physics3.json",
+		"Expressions": [
+			{
+				"Name": "angry.exp3.json",
+				"File": "expressions/angry.exp3.json"
+			},
+			{
+				"Name": "approval.exp3.json",
+				"File": "expressions/approval.exp3.json"
+			},
+			{
+				"Name": "desire.exp3.json",
+				"File": "expressions/desire.exp3.json"
+			},
+			{
+				"Name": "embarrassed.exp3.json",
+				"File": "expressions/embarrassed.exp3.json"
+			},
+			{
+				"Name": "excited.exp3.json",
+				"File": "expressions/excited.exp3.json"
+			},
+			{
+				"Name": "happy.exp3.json",
+				"File": "expressions/happy.exp3.json"
+			},
+			{
+				"Name": "neutral.exp3.json",
+				"File": "expressions/neutral.exp3.json"
+			},
+			{
+				"Name": "sad.exp3.json",
+				"File": "expressions/sad.exp3.json"
+			},
+			{
+				"Name": "wink.exp3.json",
+				"File": "expressions/wink.exp3.json"
+			},
+			{
+				"Name": "shocked.exp3.json",
+				"File": "expressions/shocked.exp3.json"
+			}
+		],
+		"Motions": {
+			"Idle": [
+				{
+					"File": "motions/Mgirl01_stand.motion3.json"
+				}
+			],
+			"TapLdai": [
+				{
+					"File": "motions/Mgirl01_Ldaihualuo.motion3.json"
+				}
+			],
+			"TapRdai": [
+				{
+					"File": "motions/Mgirl01_Rdaihualuo.motion3.json"
+				}
+			],
+			"Taphead": [
+				{
+					"File": "motions/Mgirl01_dazhaohu.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl01_deyi_a.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl01_duishouzhi_a.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl01_ganga_c.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl01_helengyin.motion3.json"
+				}
+			],
+			"Tapchest": [
+				{
+					"File": "motions/Mgirl01_tiaopi_a.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl01_tuoyehaixiu_a.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl01_sajiao_a.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl01_shuai.motion3.json"
+				}
+			],
+			"TapLshrit": [
+				{
+					"File": "motions/Mgirl01_tuoyehaixiu_a.motion3.json"
+				}
+			],
+			"TapRshirt": [
+				{
+					"File": "motions/Mgirl01_xiunu_a.motion3.json"
+				}
+			],
+			"Tapcosplay": [
+				{
+					"File": "motions/Mgirl01_sajiao_a.motion3.json"
+				}
+			]
+		}
+	},
+	"HitAreas": []
+}

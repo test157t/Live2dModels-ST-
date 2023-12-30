@@ -1,0 +1,124 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "ybxd0414__l2d_339.u.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Expressions": [
+			{
+				"Name": "angry.exp3.json",
+				"File": "expressions/angry.exp3.json"
+			},
+			{
+				"Name": "approval.exp3.json",
+				"File": "expressions/approval.exp3.json"
+			},
+			{
+				"Name": "embarrassed.exp3.json",
+				"File": "expressions/embarrassed.exp3.json"
+			},
+			{
+				"Name": "excited.exp3.json",
+				"File": "expressions/excited.exp3.json"
+			},
+			{
+				"Name": "happy.exp3.json",
+				"File": "expressions/happy.exp3.json"
+			},
+			{
+				"Name": "neutral.exp3.json",
+				"File": "expressions/neutral.exp3.json"
+			},
+			{
+				"Name": "sad.exp3.json",
+				"File": "expressions/sad.exp3.json"
+			},
+			{
+				"Name": "shocked.exp3.json",
+				"File": "expressions/shocked.exp3.json"
+			},
+			{
+				"Name": "wink.exp3.json",
+				"File": "expressions/wink.exp3.json"
+			}
+		],
+		"Motions": {
+			"": [
+				{
+					"File": "motions/Mgirl10_dianjianbang.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_dianyoushou.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_diantou.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_ditousikao.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_chuixue.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_dianzuoshou.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_chuchang.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_zhanshi2.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_chuchang.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_ditousikao.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_dianzuoshou.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_xianqunzi.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_zhanshi1.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_dianyoushou.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_zhanshi1 old.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_chuixue.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_xianqunzi.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_diantou.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_zhanshi1.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_dianjianbang.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_zhanshi2.motion3.json"
+				}
+			],
+			"Idle": [
+				{
+					"File": "motions/Mgirl10_stand.motion3.json"
+				},
+				{
+					"File": "motions/Mgirl10_stand.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [],
+	"HitAreas": []
+}

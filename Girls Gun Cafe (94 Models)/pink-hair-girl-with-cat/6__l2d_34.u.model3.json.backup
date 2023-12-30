@@ -1,0 +1,181 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "6__l2d_34.u.moc3",
+		"Textures": [
+			"textures/texture_00.png"
+		],
+		"Physics": "6__l2d_34.u.physics3.json",
+		"Expressions": [
+			{
+				"Name": "angry.exp3.json",
+				"File": "expressions/angry.exp3.json"
+			},
+			{
+				"Name": "approval.exp3.json",
+				"File": "expressions/approval.exp3.json"
+			},
+			{
+				"Name": "embarrassed.exp3.json",
+				"File": "expressions/embarrassed.exp3.json"
+			},
+			{
+				"Name": "excited.exp3.json",
+				"File": "expressions/excited.exp3.json"
+			},
+			{
+				"Name": "happy.exp3.json",
+				"File": "expressions/happy.exp3.json"
+			},
+			{
+				"Name": "neutral.exp3.json",
+				"File": "expressions/neutral.exp3.json"
+			},
+			{
+				"Name": "sad.exp3.json",
+				"File": "expressions/sad.exp3.json"
+			},
+			{
+				"Name": "wink.exp3.json",
+				"File": "expressions/wink.exp3.json"
+			}
+		],
+		"Motions": {
+			"": [
+				{
+					"File": "motions/act_cute_a.motion3.json"
+				},
+				{
+					"File": "motions/angry_b.motion3.json"
+				},
+				{
+					"File": "motions/angry_c.motion3.json"
+				},
+				{
+					"File": "motions/awkward surprise.motion3.json"
+				},
+				{
+					"File": "motions/blink.motion3.json"
+				},
+				{
+					"File": "motions/clasp hands.motion3.json"
+				},
+				{
+					"File": "motions/cute_a.motion3.json"
+				},
+				{
+					"File": "motions/dissapointed a.motion3.json"
+				},
+				{
+					"File": "motions/dissapointed.motion3.json"
+				},
+				{
+					"File": "motions/eat icecream 2.motion3.json"
+				},
+				{
+					"File": "motions/eat icecream.motion3.json"
+				},
+				{
+					"File": "motions/elegant_a.motion3.json"
+				},
+				{
+					"File": "motions/embarrased b.motion3.json"
+				},
+				{
+					"File": "motions/embarrased.motion3.json"
+				},
+				{
+					"File": "motions/embrace.motion3.json"
+				},
+				{
+					"File": "motions/excited.motion3.json"
+				},
+				{
+					"File": "motions/face-changing_a.motion3.json"
+				},
+				{
+					"File": "motions/fear.motion3.json"
+				},
+				{
+					"File": "motions/funny cat.motion3.json"
+				},
+				{
+					"File": "motions/giggle.motion3.json"
+				},
+				{
+					"File": "motions/giggle_a.motion3.json"
+				},
+				{
+					"File": "motions/greet a.motion3.json"
+				},
+				{
+					"File": "motions/greet b.motion3.json"
+				},
+				{
+					"File": "motions/jealous.motion3.json"
+				},
+				{
+					"File": "motions/laugh.motion3.json"
+				},
+				{
+					"File": "motions/love a.motion3.json"
+				},
+				{
+					"File": "motions/pet cat.motion3.json"
+				},
+				{
+					"File": "motions/pout.motion3.json"
+				},
+				{
+					"File": "motions/scratch_head_c.motion3.json"
+				},
+				{
+					"File": "motions/shy.motion3.json"
+				},
+				{
+					"File": "motions/solemn.motion3.json"
+				},
+				{
+					"File": "motions/surprise.motion3.json"
+				},
+				{
+					"File": "motions/thinking_c.motion3.json"
+				},
+				{
+					"File": "motions/touch_nose_angry_c.motion3.json"
+				},
+				{
+					"File": "motions/touch_nose_shy.motion3.json"
+				},
+				{
+					"File": "motions/touch_nose_smile.motion3.json"
+				},
+				{
+					"File": "motions/touch_nose_smile_a.motion3.json"
+				},
+				{
+					"File": "motions/wink.motion3.json"
+				},
+				{
+					"File": "motions/yawn and cat nuzzle.motion3.json"
+				},
+				{
+					"File": "motions/yawn_c.motion3.json"
+				}
+			],
+			"Idle": [
+				{
+					"File": "motions/idle.motion3.json"
+				},
+				{
+					"File": "motions/idle_a.motion3.json"
+				},
+				{
+					"File": "motions/idle_c.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [],
+	"HitAreas": []
+}

@@ -51,63 +51,63 @@
 		"Motions": {
 			"Idle": [
 				{
-					"File": "motions/Mgirl01_stand.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_stand.motion3.json"
 				}
 			],
 			"TapLdai": [
 				{
-					"File": "motions/Mgirl01_Ldaihualuo.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_Ldaihualuo.motion3.json"
 				}
 			],
 			"TapRdai": [
 				{
-					"File": "motions/Mgirl01_Rdaihualuo.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_Rdaihualuo.motion3.json"
 				}
 			],
 			"Taphead": [
 				{
-					"File": "motions/Mgirl01_dazhaohu.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_dazhaohu.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl01_deyi_a.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_deyi_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl01_duishouzhi_a.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_duishouzhi_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl01_ganga_c.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_ganga_c.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl01_helengyin.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_helengyin.motion3.json"
 				}
 			],
 			"Tapchest": [
 				{
-					"File": "motions/Mgirl01_tiaopi_a.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_tiaopi_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl01_tuoyehaixiu_a.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_tuoyehaixiu_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl01_sajiao_a.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_sajiao_a.motion3.json"
 				},
 				{
-					"File": "motions/Mgirl01_shuai.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_shuai.motion3.json"
 				}
 			],
 			"TapLshrit": [
 				{
-					"File": "motions/Mgirl01_tuoyehaixiu_a.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_tuoyehaixiu_a.motion3.json"
 				}
 			],
 			"TapRshirt": [
 				{
-					"File": "motions/Mgirl01_xiunu_a.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_xiunu_a.motion3.json"
 				}
 			],
 			"Tapcosplay": [
 				{
-					"File": "motions/Mgirl01_sajiao_a.motion3.json"
+					"File": "motions/[FIXED]Mgirl01_sajiao_a.motion3.json"
 				}
 			]
 		}
