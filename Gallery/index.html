@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live2D Gallery</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Updated CSS for gradient background and image borders */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #000000, #333333, #000000); /* Black to darker blue to black */
+      /* Adjust the color stops and direction as needed */
+      animation: gradientAnimation 10s ease infinite alternate; /* CSS animation */
+    }
+    @keyframes gradientAnimation {
+      from { background-position: 0 0; }
+      to { background-position: 100% 0; }
+    }
+    .container {
+      padding-top: 20px; /* Adjust spacing from top */
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -5px; /* Negative margin for spacing */
+    }
+    .img-container {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #fff; /* White border around images */
+      margin: 5px; /* Spacing between images */
+      width: calc(33.33% - 10px); /* Three columns with 5px margin on each side */
+      cursor: pointer; /* Add cursor pointer for clickability */
+    }
+    .img-container img {
+      transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out; /* Transition width and height change */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a small shadow */
+      width: 100%;
+      height: auto;
+    }
+    .img-container:hover img {
+      transform: scale(1.2);
+      width: 100%; /* Enlarge image on hover */
+      height: auto;
+      z-index: 1; /* Ensure the image is on top */
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .img-container:hover .overlay {
+      opacity: 1;
+    }
+    .overlay a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head><body>
+  <div class="container">
+    <div class="row" id="gallery"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    async function loadModelsFromJSON() {
+      try {
+        const response = await fetch('live2d_models.json');
+        const live2dModels = await response.json();
+
+        const galleryDiv = document.getElementById('gallery');
+        live2dModels.forEach(item => {
+          const folderPath = item.file_path.replace(/^\.\.\//, '').replace('.model3.json', '_thumbnail.png');
+          const imagePath = `http://localhost:8000/Gallery/${folderPath}`;
+
+          const imageDiv = document.createElement('div');
+          imageDiv.classList.add('img-container');
+
+          const image = document.createElement('img');
+          image.onerror = function() {
+            this.src = 'noimage.png'; // Placeholder image
+          };
+          image.src = imagePath;
+          image.classList.add('img-fluid', 'rounded');
+
+          const overlay = document.createElement('div');
+          overlay.classList.add('overlay');
+          overlay.textContent = item.folder_name;
+
+          imageDiv.appendChild(image);
+          imageDiv.appendChild(overlay);
+          galleryDiv.appendChild(imageDiv);
+
+          // Event listener to open link on click
+          imageDiv.addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = `http://localhost:8000/Gallery/detail.html?modelNumber=${item.number}`;
+            link.target = '_blank';
+            link.click();
+          });
+        });
+      } catch (error) {
+        console.error('Error fetching or parsing JSON:', error);
+      }
+    }
+
+    loadModelsFromJSON();
+  </script>
+</body>
+</html>

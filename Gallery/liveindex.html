@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loaded Live2D Gallery</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    /* Style for the gallery and iframes */
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 10px;
+      height: 100vh; /* Full viewport height */
+      width: 100%; /* Full viewport width */
+      padding: 10px; /* Some padding for better visualization */
+    }
+    .iframe-container {
+      width: 100%;
+      height: 33.33vh; /* 1/3 of viewport height */
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      box-sizing: border-box;
+    }
+    .iframe-container.show {
+      opacity: 1;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none; /* Remove iframe borders */
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery" id="gallery"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    let loadedRows = 2; // Initially load 2 rows (total 6 iframes)
+    let isLoading = false;
+
+    async function loadModelsFromJSON() {
+      try {
+        const response = await fetch('live2d_models.json');
+        const live2dModels = await response.json();
+
+        const galleryDiv = document.getElementById('gallery');
+
+        // Function to load iframes for a specific row range
+        function loadIframes(startIndex, endIndex) {
+          for (let i = startIndex; i < endIndex; i++) {
+            const item = live2dModels[i];
+            const iframeContainer = document.createElement('div');
+            iframeContainer.classList.add('iframe-container');
+            const iframe = document.createElement('iframe');
+            iframe.src = `http://localhost:8000/Gallery/detail.html?modelNumber=${item.number}`;
+            iframeContainer.appendChild(iframe);
+            galleryDiv.appendChild(iframeContainer);
+
+            const observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('show');
+                  observer.unobserve(entry.target);
+                }
+              });
+            });
+            observer.observe(iframeContainer);
+          }
+        }
+
+        // Load initial 2 rows (6 iframes)
+        loadIframes(0, 6);
+
+        // Listen for scroll event to load more rows
+        window.addEventListener('scroll', () => {
+          const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+          if (scrollTop + clientHeight >= scrollHeight - 50 && !isLoading && loadedRows < live2dModels.length / 2) {
+            isLoading = true;
+            loadedRows += 1;
+            const start = loadedRows * 2 * 3;
+            const end = start + 6;
+            setTimeout(() => {
+              loadIframes(start, end);
+              isLoading = false;
+            }, 500);
+          }
+        });
+      } catch (error) {
+        console.error('Error fetching or parsing JSON:', error);
+      }
+    }
+
+    loadModelsFromJSON();
+  </script>
+</body>
+</html>
