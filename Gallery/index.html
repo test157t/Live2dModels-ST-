@@ -100,7 +100,17 @@
           const imagesToLoad = live2dModels.slice(start, start + limit);
 
           imagesToLoad.forEach(item => {
-            const folderPath = item.file_path.replace(/^\.\.\//, '').replace('.model3.json', '_thumbnail.png');
+            //const folderPath = item.file_path.replace(/^\.\.\//, '').replace('.model3.json', '_thumbnail.png');
+            
+            let folderPath = item.file_path.replace(/^\.\.\//, '');
+
+            if (folderPath.includes('model3.json')) {
+                folderPath = folderPath.replace('.model3.json', '_thumbnail.png');
+            } else if (folderPath.includes('model.json')) {
+                folderPath = folderPath.replace('model.json', '_thumbnail.png');
+            }
+
+
             const imagePath = `http://localhost:8000/Gallery/${folderPath}`;
 
             const imageDiv = document.createElement('div');
