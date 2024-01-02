@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Live2D Gallery</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        #banner {
+            width: 100%;
+            height: 50px; /* Adjust height as needed */
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        #canvas-container {
+            width: 100%;
+            height: calc(100vh - 50px); /* Adjust height minus banner height */
+            position: relative;
+            margin: auto;
+            border: 1px solid black; /* Optional: Add border for visualization */
+        }
+
+        #canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            position: absolute;
+            top: 10px;
+        }
+
+        #prevButton {
+            left: 10px;
+        }
+
+        #nextButton {
+            right: 10px;
+        }
+    </style>
+    <script src="static/live2dcubismcore.min.js"></script>
+    <script src="static/live2d.min.js"></script>
+    <script src="static/pixi.min.js"></script>
+    <script src="static/index.min.js"></script>
+</head>
+
+<body>
+    <div id="banner">Folder Name</div>
+
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <button id="prevButton" hidden>Previous</button>
+    <button id="nextButton" hidden>Next</button>
+
+    <script>
+        let currentIndex = 0;
+        let live2dModels = [];
+        let modelScale = 1;
+
+        async function loadModel(index) {
+            if (index >= 0 && index < live2dModels.length) {
+                const canvas = document.getElementById('canvas');
+                const app = new PIXI.Application({
+                    view: canvas,
+                    autoStart: true,
+                    resizeTo: window
+                });
+
+                const model = await PIXI.live2d.Live2DModel.from(live2dModels[index].file_path);
+
+                // Adjust model scale to fit within the canvas
+                const scaleFactor = Math.min(canvas.width / model.width, canvas.height / model.height);
+                model.scale.set(modelScale * scaleFactor);
+
+                app.stage.addChild(model);
+
+                // Update banner with folder name
+                document.getElementById('banner').innerText = live2dModels[index].folder_name;
+
+                // Update URL parameter
+                history.replaceState({}, '', `?modelNumber=${index + 1}`);
+            }
+        }
+
+        async function loadModelsFromJSON() {
+            const response = await fetch('live2d_models.json');
+            live2dModels = await response.json();
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const modelNumber = parseInt(urlParams.get('modelNumber'));
+
+            if (!isNaN(modelNumber) && modelNumber > 0 && modelNumber <= live2dModels.length) {
+                currentIndex = modelNumber - 1;
+            }
+
+            loadModel(currentIndex);
+        }
+
+        function handleNextButtonClick() {
+            currentIndex++;
+            if (currentIndex >= live2dModels.length) {
+                currentIndex = live2dModels.length - 1;
+            }
+            loadModel(currentIndex);
+        }
+
+        function handlePrevButtonClick() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = 0;
+            }
+            loadModel(currentIndex);
+        }
+
+        document.getElementById('nextButton').addEventListener('click', handleNextButtonClick);
+        document.getElementById('prevButton').addEventListener('click', handlePrevButtonClick);
+
+        loadModelsFromJSON();
+    </script>
+</body>
+
+</html>
