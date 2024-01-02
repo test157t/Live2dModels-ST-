@@ -87,7 +87,6 @@
 const limit = 30;
 let isLoading = false; // Define isLoading as a global variable
 
-
 async function loadModelsFromJSON() {
   try {
     const response = await fetch('live2d_models.json');
@@ -138,20 +137,23 @@ async function loadModelsFromJSON() {
       loadImagesByTag(selectedTag);
     });
 
-    // Populating dropdown with unique tags
-    const allTags = new Set();
+    const tagCounts = {}; // Object to store tag counts
+
     live2dModels.forEach(item => {
-      item.tags.forEach(tag => allTags.add(tag));
+      item.tags.forEach(tag => {
+        tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+      });
     });
-    allTags.forEach(tag => {
+
+    Object.keys(tagCounts).forEach(tag => {
       const option = document.createElement('option');
       option.value = tag;
-      option.textContent = tag;
+      option.textContent = `${tag} (${tagCounts[tag]})`;
       dropdown.appendChild(option);
     });
 
-    // Load images initially without filtering
-    loadImagesByTag('');
+    loadImagesByTag(''); // Initially load images without filtering
+
 
 
     const loadMore = () => {
@@ -220,12 +222,22 @@ async function loadModelsFromJSON() {
 
     loadMore(); // Initially load images
     window.addEventListener('scroll', lazyLoad);
-  } catch (error) {
-    console.error('Error fetching or parsing JSON:', error);
-  }
+// Rest of your code for lazy loading (loadMore, lazyLoad)...
+} catch (error) {
+console.error('Error fetching or parsing JSON:', error);
+}
 }
 
-// Call the function to start loading models from JSON when the page loads
+function getImagePath(item) {
+let folderPath = item.file_path.replace(/^\.\.\//, '');
+if (folderPath.includes('model3.json')) {
+folderPath = folderPath.replace('.model3.json', '_thumbnail.png');
+} else if (folderPath.includes('model.json')) {
+folderPath = folderPath.replace('model.json', '_thumbnail.png');
+}
+return folderPath;
+}
+
 loadModelsFromJSON();
 
     // Helper function to get the correct image path based on file_path structure
@@ -243,6 +255,9 @@ loadModelsFromJSON();
 
     // Call the function to start loading models from JSON when the page loads
     loadModelsFromJSON();
+
+
   </script>
 </body>
 </html>
+
