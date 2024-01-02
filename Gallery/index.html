@@ -71,49 +71,82 @@
       font-weight: bold;
     }
   </style>
-</head><body>
+</head>
+<body>
   <div class="container">
     <div class="row" id="gallery"></div>
+    <div id="loading" style="display: none;">Loading...</div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script>
+    let start = 0; // Starting index of images to load
+    const limit = 30; // Number of images to load each time
+    let isLoading = false;
+
     async function loadModelsFromJSON() {
       try {
         const response = await fetch('live2d_models.json');
         const live2dModels = await response.json();
 
         const galleryDiv = document.getElementById('gallery');
-        live2dModels.forEach(item => {
-          const folderPath = item.file_path.replace(/^\.\.\//, '').replace('.model3.json', '_thumbnail.png');
-          const imagePath = `http://localhost:8000/Gallery/${folderPath}`;
+        const loadingDiv = document.getElementById('loading');
 
-          const imageDiv = document.createElement('div');
-          imageDiv.classList.add('img-container');
+        // Function to load more images
+        const loadMore = () => {
+          if (isLoading) return;
+          isLoading = true;
 
-          const image = document.createElement('img');
-          image.onerror = function() {
-            this.src = 'noimage.png'; // Placeholder image
-          };
-          image.src = imagePath;
-          image.classList.add('img-fluid', 'rounded');
+          const imagesToLoad = live2dModels.slice(start, start + limit);
 
-          const overlay = document.createElement('div');
-          overlay.classList.add('overlay');
-          overlay.textContent = item.folder_name;
+          imagesToLoad.forEach(item => {
+            const folderPath = item.file_path.replace(/^\.\.\//, '').replace('.model3.json', '_thumbnail.png');
+            const imagePath = `http://localhost:8000/Gallery/${folderPath}`;
 
-          imageDiv.appendChild(image);
-          imageDiv.appendChild(overlay);
-          galleryDiv.appendChild(imageDiv);
+            const imageDiv = document.createElement('div');
+            imageDiv.classList.add('img-container');
 
-          // Event listener to open link on click
-          imageDiv.addEventListener('click', function() {
-            const link = document.createElement('a');
-            link.href = `http://localhost:8000/Gallery/detail.html?modelNumber=${item.number}`;
-            link.target = '_blank';
-            link.click();
+            const image = document.createElement('img');
+            image.onerror = function() {
+              this.src = 'noimage.png'; // Placeholder image
+            };
+            image.src = imagePath;
+            image.classList.add('img-fluid', 'rounded');
+
+            const overlay = document.createElement('div');
+            overlay.classList.add('overlay');
+            overlay.textContent = item.folder_name;
+
+            imageDiv.appendChild(image);
+            imageDiv.appendChild(overlay);
+            galleryDiv.appendChild(imageDiv);
+
+            // Event listener to open link on click
+            imageDiv.addEventListener('click', function() {
+              const link = document.createElement('a');
+              link.href = `http://localhost:8000/Gallery/detail.html?modelNumber=${item.number}`;
+              link.target = '_blank';
+              link.click();
+            });
           });
-        });
+
+          start += limit;
+          isLoading = false;
+          if (start >= live2dModels.length) {
+            window.removeEventListener('scroll', lazyLoad); // Remove event listener when all images are loaded
+            loadingDiv.style.display = 'none';
+          }
+        };
+
+        const lazyLoad = () => {
+          if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+            loadingDiv.style.display = 'block';
+            loadMore();
+          }
+        };
+
+        loadMore(); // Initially load images
+        window.addEventListener('scroll', lazyLoad);
       } catch (error) {
         console.error('Error fetching or parsing JSON:', error);
       }

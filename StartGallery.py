@@ -4,6 +4,15 @@ import json
 import threading
 import webbrowser
 
+class NoCacheHTTPRequestHandler(SimpleHTTPRequestHandler):
+    def end_headers(self):
+        self.send_no_cache_headers()
+        SimpleHTTPRequestHandler.end_headers(self)
+
+    def send_no_cache_headers(self):
+        self.send_header('Cache-Control', 'no-store, must-revalidate')
+        self.send_header('Expires', '0')
+
 def get_live2d_model():
     live2d_models = []
     root_directory = Path('./')  # Use the current directory
@@ -11,18 +20,33 @@ def get_live2d_model():
     count = 1
     for sub_directory in root_directory.iterdir():
         if sub_directory.is_dir():
-            model_files = list(sub_directory.glob('**/*.model3.json'))
-            for file in model_files:
-                sub_folder_name = file.parent.name
-                relative_path = file.relative_to(root_directory)  # Get the relative path
-                file_path = "../../" + "/".join(relative_path.parts)  # Prepend path parts with '../../'
-                model_info = {
-                    "number": count,
-                    "folder_name": sub_folder_name,
-                    "file_path": file_path
-                }
-                live2d_models.append(model_info)
-                count += 1
+            model3_files = list(sub_directory.glob('**/*.model3.json'))
+
+            if not model3_files:
+                model_files = list(sub_directory.glob('**/*model.json'))
+                for file in model_files:
+                    sub_folder_name = file.parent.name
+                    relative_path = file.relative_to(root_directory)  # Get the relative path
+                    file_path = "../../" + "/".join(relative_path.parts)  # Prepend path parts with '../../'
+                    model_info = {
+                        "number": count,
+                        "folder_name": sub_folder_name,
+                        "file_path": file_path
+                    }
+                    live2d_models.append(model_info)
+                    count += 1
+            else:
+                for file in model3_files:
+                    sub_folder_name = file.parent.name
+                    relative_path = file.relative_to(root_directory)  # Get the relative path
+                    file_path = "../../" + "/".join(relative_path.parts)  # Prepend path parts with '../../'
+                    model_info = {
+                        "number": count,
+                        "folder_name": sub_folder_name,
+                        "file_path": file_path
+                    }
+                    live2d_models.append(model_info)
+                    count += 1
 
     return live2d_models
 
@@ -42,13 +66,13 @@ def generate_json_and_start_server():
 
     print(f"JSON data saved to {output_file_path}")
 
-    # Start a simple HTTP server serving from the 'Gallery' folder
+    # Start a simple HTTP server serving from the 'Gallery' folder with the custom handler
     PORT = 8000
-    handler = SimpleHTTPRequestHandler
+    handler = NoCacheHTTPRequestHandler
     httpd = HTTPServer(('localhost', PORT), handler)
     
     # Navigate to the index page inside the 'Gallery' folder
-    webbrowser.open_new_tab(f"http://localhost:{PORT}/Gallery/index.html")
+    #webbrowser.open_new_tab(f"http://localhost:{PORT}/Gallery/index.html")
 
     print(f"Serving at http://localhost:{PORT}")
     httpd.serve_forever()
