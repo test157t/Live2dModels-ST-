@@ -145,12 +145,17 @@ async function loadModelsFromJSON() {
       });
     });
 
-    Object.keys(tagCounts).forEach(tag => {
-      const option = document.createElement('option');
-      option.value = tag;
-      option.textContent = `${tag} (${tagCounts[tag]})`;
-      dropdown.appendChild(option);
-    });
+// Sort the tag keys alphabetically
+const sortedTags = Object.keys(tagCounts).sort();
+
+// Populate dropdown with sorted tags
+sortedTags.forEach(tag => {
+    const option = document.createElement('option');
+    option.value = tag;
+    option.textContent = `${tag} (${tagCounts[tag]})`;
+    dropdown.appendChild(option);
+});
+
 
     loadImagesByTag(''); // Initially load images without filtering
 
