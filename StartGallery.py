@@ -72,7 +72,7 @@ def generate_json_and_start_server():
     httpd = HTTPServer(('localhost', PORT), handler)
     
     # Navigate to the index page inside the 'Gallery' folder
-    #webbrowser.open_new_tab(f"http://localhost:{PORT}/Gallery/index.html")
+    webbrowser.open_new_tab(f"http://localhost:{PORT}/Gallery/index.html")
 
     print(f"Serving at http://localhost:{PORT}")
     httpd.serve_forever()
