@@ -74,28 +74,90 @@
 </head>
 <body>
   <div class="container">
+    <select id="tagFilter">
+      <option value="">Filter by Tag</option>
+    </select>
     <div class="row" id="gallery"></div>
     <div id="loading" style="display: none;">Loading...</div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script>
-    let start = 0; // Starting index of images to load
-    const limit = 30; // Number of images to load each time
-    let isLoading = false;
+    let start = 0;
+const limit = 30;
+let isLoading = false; // Define isLoading as a global variable
 
-    async function loadModelsFromJSON() {
-      try {
-        const response = await fetch('live2d_models.json');
-        const live2dModels = await response.json();
 
-        const galleryDiv = document.getElementById('gallery');
-        const loadingDiv = document.getElementById('loading');
+async function loadModelsFromJSON() {
+  try {
+    const response = await fetch('live2d_models.json');
+    const live2dModels = await response.json();
 
-        // Function to load more images
-        const loadMore = () => {
-          if (isLoading) return;
-          isLoading = true;
+    const galleryDiv = document.getElementById('gallery');
+    const loadingDiv = document.getElementById('loading');
+    const dropdown = document.getElementById('tagFilter');
+
+    const loadImagesByTag = (selectedTag) => {
+      galleryDiv.innerHTML = ''; // Clear the gallery
+
+      live2dModels.forEach(item => {
+        if (selectedTag === '' || item.tags.includes(selectedTag)) {
+          const folderPath = getImagePath(item);
+          const imagePath = `http://localhost:8000/Gallery/${folderPath}`;
+
+          const imageDiv = document.createElement('div');
+          imageDiv.classList.add('img-container');
+
+          const image = document.createElement('img');
+          image.onerror = function() {
+            this.src = 'noimage.png'; // Placeholder image
+          };
+          image.src = imagePath;
+          image.classList.add('img-fluid', 'rounded');
+
+          const overlay = document.createElement('div');
+          overlay.classList.add('overlay');
+          overlay.textContent = item.folder_name;
+
+          imageDiv.appendChild(image);
+          imageDiv.appendChild(overlay);
+          galleryDiv.appendChild(imageDiv);
+
+          imageDiv.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.href = `http://localhost:8000/Gallery/detail.html?modelNumber=${item.number}`;
+            link.target = '_blank';
+            link.click();
+          });
+        }
+      });
+    };
+
+    dropdown.addEventListener('change', function() {
+      const selectedTag = this.value.toLowerCase();
+      loadImagesByTag(selectedTag);
+    });
+
+    // Populating dropdown with unique tags
+    const allTags = new Set();
+    live2dModels.forEach(item => {
+      item.tags.forEach(tag => allTags.add(tag));
+    });
+    allTags.forEach(tag => {
+      const option = document.createElement('option');
+      option.value = tag;
+      option.textContent = tag;
+      dropdown.appendChild(option);
+    });
+
+    // Load images initially without filtering
+    loadImagesByTag('');
+
+
+    const loadMore = () => {
+      if (isLoading) return;
+      isLoading = true;
+
 
           const imagesToLoad = live2dModels.slice(start, start + limit);
 
@@ -117,9 +179,9 @@
             imageDiv.classList.add('img-container');
 
             const image = document.createElement('img');
-            //image.onerror = function() {
-              //this.src = 'noimage.png'; // Placeholder image
-            //};
+            image.onerror = function() {
+              this.src = 'noimage.png'; // Placeholder image
+            };
             image.src = imagePath;
             image.classList.add('img-fluid', 'rounded');
 
@@ -148,20 +210,38 @@
           }
         };
 
-        const lazyLoad = () => {
-          if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
-            loadingDiv.style.display = 'block';
-            loadMore();
-          }
-        };
-
-        loadMore(); // Initially load images
-        window.addEventListener('scroll', lazyLoad);
-      } catch (error) {
-        console.error('Error fetching or parsing JSON:', error);
+        
+    const lazyLoad = () => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+        loadingDiv.style.display = 'block';
+        loadMore();
       }
+    };
+
+    loadMore(); // Initially load images
+    window.addEventListener('scroll', lazyLoad);
+  } catch (error) {
+    console.error('Error fetching or parsing JSON:', error);
+  }
+}
+
+// Call the function to start loading models from JSON when the page loads
+loadModelsFromJSON();
+
+    // Helper function to get the correct image path based on file_path structure
+    function getImagePath(item) {
+      let folderPath = item.file_path.replace(/^\.\.\//, '');
+
+      if (folderPath.includes('model3.json')) {
+        folderPath = folderPath.replace('.model3.json', '_thumbnail.png');
+      } else if (folderPath.includes('model.json')) {
+        folderPath = folderPath.replace('model.json', '_thumbnail.png');
+      }
+
+      return folderPath;
     }
 
+    // Call the function to start loading models from JSON when the page loads
     loadModelsFromJSON();
   </script>
 </body>
