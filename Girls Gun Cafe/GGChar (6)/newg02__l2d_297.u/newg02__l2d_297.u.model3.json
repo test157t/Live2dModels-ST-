@@ -138,6 +138,9 @@
 					"File": "motions/[FIXED]Bow.motion3.json"
 				},
 				{
+					"File": "motions/[FIXED]carrybasket.motion3.json"
+				},
+				{
 					"File": "motions/[FIXED]Charging.motion3.json"
 				},
 				{
@@ -148,6 +151,9 @@
 				},
 				{
 					"File": "motions/[FIXED]confusion.motion3.json"
+				},
+				{
+					"File": "motions/[FIXED]crouch.motion3.json"
 				},
 				{
 					"File": "motions/[FIXED]Curtsy.motion3.json"
@@ -177,6 +183,15 @@
 					"File": "motions/[FIXED]Flower.motion3.json"
 				},
 				{
+					"File": "motions/[FIXED]frown.motion3.json"
+				},
+				{
+					"File": "motions/[FIXED]gather.motion3.json"
+				},
+				{
+					"File": "motions/[FIXED]happy.motion3.json"
+				},
+				{
 					"File": "motions/[FIXED]Headbutt.motion3.json"
 				},
 				{
@@ -192,10 +207,16 @@
 					"File": "motions/[FIXED]love.motion3.json"
 				},
 				{
+					"File": "motions/[FIXED]open.motion3.json"
+				},
+				{
 					"File": "motions/[FIXED]OpponentFinger.motion3.json"
 				},
 				{
 					"File": "motions/[FIXED]panic.motion3.json"
+				},
+				{
+					"File": "motions/[FIXED]poke.motion3.json"
 				},
 				{
 					"File": "motions/[FIXED]pondering.motion3.json"
@@ -204,10 +225,22 @@
 					"File": "motions/[FIXED]Pose.motion3.json"
 				},
 				{
+					"File": "motions/[FIXED]pout.motion3.json"
+				},
+				{
 					"File": "motions/[FIXED]Practice.motion3.json"
 				},
 				{
+					"File": "motions/[FIXED]practice2.motion3.json"
+				},
+				{
+					"File": "motions/[FIXED]rubeyes.motion3.json"
+				},
+				{
 					"File": "motions/[FIXED]Shake.motion3.json"
+				},
+				{
+					"File": "motions/[FIXED]shakehands.motion3.json"
 				},
 				{
 					"File": "motions/[FIXED]ShoulderBrush.motion3.json"
@@ -222,22 +255,31 @@
 					"File": "motions/[FIXED]shy2.motion3.json"
 				},
 				{
+					"File": "motions/[FIXED]smell.motion3.json"
+				},
+				{
 					"File": "motions/[FIXED]smile.motion3.json"
 				},
 				{
 					"File": "motions/[FIXED]Smile1.motion3.json"
 				},
 				{
+					"File": "motions/[FIXED]spinL.motion3.json"
+				},
+				{
 					"File": "motions/[FIXED]SpinningHeart.motion3.json"
 				},
 				{
-					"File": "motions/[FIXED]stand.motion3.json"
+					"File": "motions/[FIXED]spinR.motion3.json"
 				},
 				{
 					"File": "motions/[FIXED]surprise.motion3.json"
 				},
 				{
 					"File": "motions/[FIXED]thinking.motion3.json"
+				},
+				{
+					"File": "motions/[FIXED]wave.motion3.json"
 				},
 				{
 					"File": "motions/[FIXED]waving.motion3.json"
@@ -250,6 +292,9 @@
 				}
 			],
 			"Idle": [
+				{
+					"File": "motions/[FIXED]stand.motion3.json"
+				},
 				{
 					"File": "motions/[FIXED]stand1.motion3.json"
 				},
