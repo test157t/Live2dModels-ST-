@@ -3,7 +3,7 @@
 	"FileReferences": {
 		"Moc": "bola_2.moc3",
 		"Textures": [
-			"textures/texture_00 - 副本.png"
+			"textures/texture_00.png"
 		],
 		"Physics": "bola_2.physics3.json",
 		"Motions": {
