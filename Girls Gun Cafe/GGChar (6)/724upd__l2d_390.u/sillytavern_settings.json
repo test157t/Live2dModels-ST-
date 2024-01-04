@@ -1,0 +1,146 @@
+{
+    "scale": 1,
+        "x": -59,
+        "y": -20,
+        "cursor_param": {
+            "idParamAngleX": "PARAM_BODY_ANGLE_X",
+            "idParamAngleY": "PARAM_BODY_ANGLE_Y",
+            "idParamAngleZ": "PARAM_ANGLE_Z",
+            "idParamBodyAngleX": "PARAM_BODY_ANGLE_X",
+            "idParamBreath": "PARAM_BREATH",
+            "idParamEyeBallX": "PARAM_EYE_BALL_X",
+            "idParamEyeBallY": "PARAM_EYE_BALL_Y"
+        },
+        "param_mouth_open_y_id": "PARAM_MOUTH_OPEN",
+        "mouth_open_speed": 1,
+        "mouth_time_per_character": 30,
+        "animation_starter": {
+            "expression": "amusement",
+            "motion": "_id=random",
+            "delay": 0
+        },
+        "animation_default": {
+            "expression": "neutral",
+            "motion": "Idle_id=random"
+        },
+        "animation_click": {
+            "expression": "love",
+            "motion": "_id=random",
+            "message": ""
+        },
+        "hit_areas": {},
+        "classify_mapping": {
+            "admiration": {
+                "expression": "admiration",
+                "motion": "_id=0"
+            },
+            "amusement": {
+                "expression": "amusement",
+                "motion": "_id=10"
+            },
+            "anger": {
+                "expression": "anger",
+                "motion": "_id=3"
+            },
+            "annoyance": {
+                "expression": "annoyance",
+                "motion": "_id=3"
+            },
+            "approval": {
+                "expression": "approval",
+                "motion": "_id=13"
+            },
+            "caring": {
+                "expression": "caring",
+                "motion": "_id=10"
+            },
+            "confusion": {
+                "expression": "confusion",
+                "motion": "_id=1"
+            },
+            "curiosity": {
+                "expression": "curiosity",
+                "motion": "_id=15"
+            },
+            "desire": {
+                "expression": "desire",
+                "motion": "_id=11"
+            },
+            "disappointment": {
+                "expression": "disappointment",
+                "motion": "_id=2"
+            },
+            "disapproval": {
+                "expression": "disapproval",
+                "motion": "_id=9"
+            },
+            "disgust": {
+                "expression": "disgust",
+                "motion": "_id=3"
+            },
+            "embarrassment": {
+                "expression": "embarrassed",
+                "motion": "_id=5"
+            },
+            "excitement": {
+                "expression": "excitement",
+                "motion": "_id=6"
+            },
+            "fear": {
+                "expression": "fear",
+                "motion": "_id=9"
+            },
+            "gratitude": {
+                "expression": "gratitude",
+                "motion": "_id=13"
+            },
+            "grief": {
+                "expression": "grief",
+                "motion": "_id=2"
+            },
+            "joy": {
+                "expression": "joy",
+                "motion": "_id=0"
+            },
+            "love": {
+                "expression": "love",
+                "motion": "_id=8"
+            },
+            "nervousness": {
+                "expression": "nervousness",
+                "motion": "_id=14"
+            },
+            "optimism": {
+                "expression": "optimism",
+                "motion": "_id=12"
+            },
+            "pride": {
+                "expression": "pride",
+                "motion": "_id=10"
+            },
+            "realization": {
+                "expression": "realization",
+                "motion": "_id=14"
+            },
+            "relief": {
+                "expression": "relief",
+                "motion": "_id=6"
+            },
+            "remorse": {
+                "expression": "remorse",
+                "motion": "_id=2"
+            },
+            "sadness": {
+                "expression": "sadness",
+                "motion": "_id=2"
+            },
+            "surprise": {
+                "expression": "surprise",
+                "motion": "_id=14"
+            },
+            "neutral": {
+                "expression": "neutral",
+                "motion": "Idle_id=random"
+            }
+        }
+}
