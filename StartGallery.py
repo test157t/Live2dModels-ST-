@@ -54,39 +54,25 @@ def tagger_predict(image, score_threshold):
 
 
 
-def get_live2d_model(*, with_tags=True):
+def get_live2d_model():
     live2d_models = []
     root_directory = Path('./')  # Use the current directory
     count = 1
-
     script_directory = Path(__file__).resolve().parent  # Get the directory of the script
 
     for sub_directory in root_directory.iterdir():
         folder_rel_path = ''  # Set a default value
         if sub_directory.is_dir():
+            # Look for '*.model3.json', '*model.json', and 'model.json'
+            model_files = list(sub_directory.glob('**/*.model3.json')) + list(sub_directory.glob('**/*model.json'))
+            if not model_files:
+                model_files = list(sub_directory.glob('**/model.json'))
 
-            # Look for '*.model3.json'
-            model3_files = list(sub_directory.glob('**/*.model3.json'))
-
-            # Look for '*model.json' in addition to '*.model3.json'
-            model_files = list(sub_directory.glob('**/*model.json'))
-
-            # Combine the lists to get all '*.model3.json' and '*model.json' files
-            all_model_files = model3_files + model_files
-
-            # If any '*.model3.json' or '*model.json' files are found, process them
-            if all_model_files:
-                files_to_process = all_model_files
-            else:
-                # If neither '*.model3.json' nor '*model.json', look for 'model.json'
-                files_to_process = list(sub_directory.glob('**/model.json'))
-
-            # Proceed with processing based on files_to_process
-
-            if not files_to_process:
+            if not model_files:
                 print(f"No model found in folder: {sub_directory}")
                 continue
-            for file in files_to_process:
+
+            for file in model_files:
                 sub_folder_name = file.parent.name
                 relative_path = file 
 
@@ -101,15 +87,22 @@ def get_live2d_model(*, with_tags=True):
                         print(f"Error: Could not read the image '{thumbnail_path}'.")
                         tags = ["NO_IMAGE"]  # Assign "NO_IMAGE" if the image cannot be read
                     else:
+                        # Check if tags exist and are non-empty
+                        output_file_path = 'Gallery/live2d_models.json'
+                        existing_tags = {}
+                        if Path(output_file_path).exists():
+                            with open(output_file_path, 'r') as existing_file:
+                                existing_data = json.load(existing_file)
+                                existing_tags = {model['folder_name']: model['tags'] for model in existing_data}
 
-                        if with_tags:
+                        if existing_tags.get(sub_folder_name) and existing_tags[sub_folder_name]:
+                            print(f"Tags already exist for Model #{count} in folder: {sub_directory}/{sub_folder_name}. Skipping tagging.")
+                            tags = existing_tags[sub_folder_name]
+                        else:
                             img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
                             folder_rel_path = os.path.relpath(sub_directory, script_directory)
                             print(f"Creating Tags for Model #{count} in folder: {folder_rel_path}/{sub_folder_name}")
                             tags = tagger_predict(img, 0.5)
-                        else:
-                            tags = []  # Empty tags if -NOTAGS argument is present
-                            print(f"Skipping Tags for Model #{count} in folder: {folder_rel_path}/{sub_folder_name}")
 
                 else:
                     print(f"No thumbnail found in directory: {relative_path.parent}")
@@ -122,6 +115,7 @@ def get_live2d_model(*, with_tags=True):
                     "file_path": file_path,
                     "tags": tags
                 }
+
                 live2d_models.append(model_info)
                 count += 1
 
@@ -129,10 +123,10 @@ def get_live2d_model(*, with_tags=True):
 
 
 
-def generate_json_and_start_server():
-    with_tags = not any(arg.lower() == "--notags" for arg in map(str.lower, sys.argv))
-    live2d_models = get_live2d_model(with_tags=with_tags)
 
+def generate_json_and_start_server():
+
+    live2d_models = get_live2d_model()
 
     # Define the path for the output JSON file inside the 'Gallery' folder
     output_file_path = 'Gallery/live2d_models.json'
