@@ -3,26 +3,21 @@
 	"Parameters": [
 		{
 			"Id": "PARAM_MOUTH_FORM",
-			"Value": -0.913,
+			"Value": -1,
 			"Blend": "Add"
 		},
 		{
-			"Id": "PARAM_BROW_L_ANGLE",
-			"Value": 1,
+			"Id": "PARAM_TERE",
+			"Value": 0.4,
 			"Blend": "Add"
 		},
 		{
-			"Id": "PARAM_BROW_R_ANGLE",
-			"Value": 1,
+			"Id": "PARAM_MOUTH_Y",
+			"Value": 0,
 			"Blend": "Add"
 		},
 		{
-			"Id": "PARAM_BROW_L_FORM",
-			"Value": 1,
-			"Blend": "Add"
-		},
-		{
-			"Id": "PARAM_BROW_R_FORM",
+			"Id": "PARAM_WATER",
 			"Value": 1,
 			"Blend": "Add"
 		},
@@ -32,48 +27,13 @@
 			"Blend": "Add"
 		},
 		{
-			"Id": "PARAM_BROW_R_Y",
-			"Value": 1,
-			"Blend": "Add"
-		},
-		{
-			"Id": "PARAM_BROW_L_Y",
-			"Value": 1,
-			"Blend": "Add"
-		},
-		{
-			"Id": "PARAM_EYE_L_SMILE",
-			"Value": -1,
-			"Blend": "Add"
-		},
-		{
-			"Id": "PARAM_EYE_R_SMILE",
-			"Value": -1,
-			"Blend": "Add"
-		},
-		{
-			"Id": "PARAM_EYE_L_OPEN",
-			"Value": 0,
+			"Id": "PARAM_EYE_BALL_FORM",
+			"Value": 2,
 			"Blend": "Add"
 		},
 		{
 			"Id": "PARAM_EYE_CHANGE2",
-			"Value": -2,
-			"Blend": "Add"
-		},
-		{
-			"Id": "PARAM_TERE",
-			"Value": -0.6,
-			"Blend": "Add"
-		},
-		{
-			"Id": "PARAM_RED_01",
-			"Value": -1,
-			"Blend": "Add"
-		},
-		{
-			"Id": "PARAM_HEIYANQUAN_LIANHEI",
-			"Value": 0.402,
+			"Value": -1.952,
 			"Blend": "Add"
 		}
 	]
