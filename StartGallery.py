@@ -4,11 +4,15 @@ import json
 import threading
 import webbrowser
 import os
-
+import sys
 import cv2
 import numpy as np
 import onnxruntime as rt
 from huggingface_hub import hf_hub_download
+
+#/\/\/\/\
+# CAN BE RAN WITH -NOTAG to skip tags
+#/\/\/\/\
 
 # Download or define the model path
 tagger_model_path = hf_hub_download(repo_id="skytnt/deepdanbooru_onnx", filename="deepdanbooru.onnx")
@@ -47,21 +51,30 @@ def tagger_predict(image, score_threshold):
         res.append(label)
     return res
 
+
+
+
 def get_live2d_model():
     live2d_models = []
     root_directory = Path('./')  # Use the current directory
     count = 1
+    script_directory = Path(__file__).resolve().parent  # Get the directory of the script
 
     for sub_directory in root_directory.iterdir():
+        folder_rel_path = ''  # Set a default value
         if sub_directory.is_dir():
-            model3_files = list(sub_directory.glob('**/*.model3.json'))
-            model_files = list(sub_directory.glob('**/*model.json'))
+            # Look for '*.model3.json', '*model.json', and 'model.json'
+            model_files = list(sub_directory.glob('**/*.model3.json')) + list(sub_directory.glob('**/*model.json'))
+            if not model_files:
+                model_files = list(sub_directory.glob('**/model.json'))
 
-            files_to_process = model3_files if model3_files else model_files
+            if not model_files:
+                print(f"No model found in folder: {sub_directory}")
+                continue
 
-            for file in files_to_process:
+            for file in model_files:
                 sub_folder_name = file.parent.name
-                relative_path = file  # Get the relative path with the file name included
+                relative_path = file 
 
                 file_names = [f for f in os.listdir(relative_path.parent) if "thumbnail" in f.lower()]
 
@@ -72,29 +85,47 @@ def get_live2d_model():
                     img = cv2.imread(thumbnail_path)
                     if img is None:
                         print(f"Error: Could not read the image '{thumbnail_path}'.")
-                        tags = []  # If the image cannot be read, assign an empty tag list
+                        tags = ["NO_IMAGE"]  # Assign "NO_IMAGE" if the image cannot be read
                     else:
-                        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-                        tags = tagger_predict(img, 0.5)
-                        print(F"Creating Tags for Model #{count}")
-                    
-                    file_path = "../../" + "/".join(relative_path.parts)  # Prepend path parts with '../../'
-                    model_info = {
-                        "number": count,
-                        "folder_name": sub_folder_name,
-                        "file_path": file_path,
-                        "tags": tags
-                    }
-                    live2d_models.append(model_info)
-                    count += 1
+                        # Check if tags exist and are non-empty
+                        output_file_path = 'Gallery/live2d_models.json'
+                        existing_tags = {}
+                        if Path(output_file_path).exists():
+                            with open(output_file_path, 'r') as existing_file:
+                                existing_data = json.load(existing_file)
+                                existing_tags = {model['folder_name']: model['tags'] for model in existing_data}
+
+                        if existing_tags.get(sub_folder_name) and existing_tags[sub_folder_name]:
+                            print(f"Tags already exist for Model #{count} in folder: {sub_directory}/{sub_folder_name}. Skipping tagging.")
+                            tags = existing_tags[sub_folder_name]
+                        else:
+                            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+                            folder_rel_path = os.path.relpath(sub_directory, script_directory)
+                            print(f"Creating Tags for Model #{count} in folder: {folder_rel_path}/{sub_folder_name}")
+                            tags = tagger_predict(img, 0.5)
+
                 else:
                     print(f"No thumbnail found in directory: {relative_path.parent}")
+                    tags = ["NO_IMAGE"]  # Assign "NO_IMAGE" if no thumbnail is found
+
+                file_path = "../../" + "/".join(relative_path.parts)  # Prepend path parts with '../../'
+                model_info = {
+                    "number": count,
+                    "folder_name": sub_folder_name,
+                    "file_path": file_path,
+                    "tags": tags
+                }
+
+                live2d_models.append(model_info)
+                count += 1
 
     return live2d_models
 
 
 
+
 def generate_json_and_start_server():
+
     live2d_models = get_live2d_model()
 
     # Define the path for the output JSON file inside the 'Gallery' folder
@@ -122,6 +153,5 @@ def generate_json_and_start_server():
     httpd.serve_forever()
 
 if __name__ == "__main__":
-    # Start the server in a separate thread
     server_thread = threading.Thread(target=generate_json_and_start_server)
     server_thread.start()
