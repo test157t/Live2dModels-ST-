@@ -54,6 +54,7 @@ def tagger_predict(image, score_threshold):
 
 
 
+
 def get_live2d_model():
     live2d_models = []
     root_directory = Path('./')  # Use the current directory
@@ -103,6 +104,14 @@ def get_live2d_model():
                             folder_rel_path = os.path.relpath(sub_directory, script_directory)
                             print(f"Creating Tags for Model #{count} in folder: {folder_rel_path}/{sub_folder_name}")
                             tags = tagger_predict(img, 0.5)
+                            
+                            # Remove brackets and quotes from tags
+                            formatted_tags = ' '.join(tags)
+
+                            # Save tags to folder_name.tags file
+                            tags_file_path = os.path.join(relative_path.parent, f"{sub_folder_name}.tags")
+                            with open(tags_file_path, 'w') as tags_file:
+                                tags_file.write(formatted_tags)
 
                 else:
                     print(f"No thumbnail found in directory: {relative_path.parent}")
