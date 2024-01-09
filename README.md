@@ -8,3 +8,5 @@ Girls Gun Cafe [92 Models, 8-9 Expressions, Varying Motions] (@Nitral) (@Naughty
 Fantastic Days (Working) [61 Models, 4 Expressions Varying Motions] (@Nitral)
 
 Update: We have a Gallery viewer for all the models, Thanks to @Pyrater Make sure you show him some love!
+
+Thank @Baro for the motion fix tool, as it makes my life easier!
