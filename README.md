@@ -3,7 +3,7 @@
 
 Azure Lane Models [128 Models] (@Nitral)
 
-Girls Gun Cafe [92 Models, 8-9 Expressions, Varying Motions] (@Nitral) (@Naughtynimbus for making 28 expressions for GGChar6 newg02__l2d_297.u, mapped them to the other models.)
+Girls Gun Cafe [92 Models, 8-9 Expressions, Varying Motions] (@Nitral) (@Naughtynimbus for making 28 expressions for GGChar6 newg02__l2d_297.u,  @Nitral mapped them to the other models.)
 
 Fantastic Days (Working) [61 Models, 4 Expressions Varying Motions] (@Nitral)
 
